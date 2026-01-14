@@ -7,6 +7,8 @@ Alucard:Khufra,Franco,Kaja,Minsitthar,Ruby
 Angela:Diggie,Atlas,Carmilla,Valentina
 Argus:Kaja,Valir,Franco,Minsitthar
 Arlott:Valir,Ruby,Khufra,Phoveus
+Atlas:Valir,Yi sun shin,Wanwan,Diggie
+Aulus:Valir,Natalia,Masha
 Aurora:Kagura,Lancelot,Diggie,Chou
 Badang:Valir,Pharsa,Yve,Diggie
 Balmond:Karrie,X.Borg,Lunox,Valir
@@ -21,10 +23,12 @@ Bruno:Khufra,Saber,Natalia,Chou
 Carmilla:Diggie,Valir,Pharsa,Yve
 Cecilion:Xavier,Yve,Pharsa,Kagura
 Chang’e:Lolita,Natalia,Saber,Hayabusa
+Chip:Diggie,Valir,Pharsa
 Chou:Diggie,Valir,Pharsa,Yve
+Cici:Khufra,Minsitthar,Phoveus
 Claude:Phoveus,Khufra,Minsitthar,Lolita
 Clint:Natalia,Saber,Hayabusa,Ling
-Cyclops:Lancelot,Kagura,Diggie,Chou
+Ciclope:Lancelot,Kagura,Diggie,Chou
 Diggie:Natalia,Selena,Franco,Saber
 Dyrroth:Valir,Pharsa,Yve,Ruby
 Edith:Karrie,Valentina,Diggie,Lunox
@@ -32,8 +36,10 @@ Esmeralda:Karrie,Dyrroth,Lunox,Valir
 Estes:Atlas,Carmilla,Pharsa,Yve
 Eudora:Diggie,Lancelot,Kagura,Chou
 Fanny:Khufra,Minsitthar,Franco,Chou,Phoveus
+Faramis:Diggie,Valir,Kagura
 Floryn:Atlas,Carmilla,Pharsa,Yve
 Franco:Diggie,Valir,Chou,Kagura
+Fredrinn:Karrie,Lunox,Valir,Diggie
 Freya:Valir,Karrie,Lunox,Ruby
 Gatotkaca:Karrie,Lunox,Valir,Diggie
 Gloo:Valir,X.Borg,Pharsa,Yve
@@ -51,6 +57,7 @@ Helcurt:Diggie,Chou,Kaja,Saber
 Hilda:Valir,Pharsa,Yve,Lunox
 Hylos:Karrie,Lunox,Valir,Diggie
 Irithel:Natalia,Saber,Hayabusa,Khufra
+Ixia:Natalia,Saber,Hayabusa,Ling
 Jawhead:Diggie,Valir,Pharsa,Yve
 Johnson:Diggie,Valir,Franco,Chou
 Joy:Khufra,Minsitthar,Phoveus,Franco
@@ -58,6 +65,7 @@ Julian:Diggie,Valir,Pharsa,Yve
 Kadita:Diggie,Kagura,Chou,Valir
 Kagura:Zhuxin,Khufra,Franco,Saber
 Kaja:Diggie,Valir,Chou,Kagura
+Kalea:Minsitthar,Diggie,Cici,Phoveus
 Karina:Khufra,Kaja,Franco,Saber
 Karrie:Saber,Natalia,Hayabusa,Ling
 Khaleed:Valir,Pharsa,Yve,Lunox
@@ -71,8 +79,10 @@ Lesley:Natalia,Saber,Hayabusa,Ling,Chou
 Ling:Khufra,Minsitthar,Phoveus,Franco,Saber
 Lolita:Diggie,Valir,Lunox,Karrie
 Lunox:Valir,Diggie,Pharsa,Yve
+Luo Yi:Natalia,Wanwan,Ling,Hanabi,Uranus
 Lylia:Pharsa,Yve,Xavier,Kagura
 Martis:Valir,Pharsa,Yve,Diggie
+Masha:Belerick,Tamuz,Sun,Lunox,Dyrroth
 Mathilda:Khufra,Minsitthar,Franco,Diggie
 Melissa:Natalia,Saber,Hayabusa,Ling
 Minotaur:Diggie,Valir,Lunox,Karrie
@@ -82,7 +92,9 @@ Moskov:Khufra,Saber,Natalia,Chou
 Nana:Diggie,Kagura,Lancelot,Chou
 Natalia:Diggie,Pharsa,Yve,Hilda
 Natan:Natalia,Saber,Hayabusa,Ling
+Nolan:Phoveus,Kufra,Franco,Minsitthar,Gatotkaca
 Novaria:Ling,Hayabusa,Lancelot,Natalia
+Obsidia:Brody,Saber,Natalia,Eudora,Belerick 
 Odette:Diggie,Chou,Kagura,Franco
 Paquito:Valir,Pharsa,Yve,Diggie
 Pharsa:Kagura,Natalia,Ling,Hayabusa
@@ -94,7 +106,9 @@ Ruby:Valir,Pharsa,Yve,Diggie
 Saber:Diggie,Chou,Kagura,Franco
 Selena:Diggie,Chou,Kagura,Valir
 Silvanna:Valir,Pharsa,Yve,Diggie
+Sora:Franco,Belerick,Kaja,Minotaur,Thamuz
 Sun:Pharsa,Yve,Valir,Lunox
+Suyou:Khufra,Franco,Kaja,Diggie
 Terizla:Valir,Pharsa,Yve,Diggie
 Thamuz:Valir,Pharsa,Yve,Lunox
 Tigreal:Diggie,Valir,Lunox,Karrie
@@ -110,21 +124,9 @@ Yi Sun-shin:Natalia,Saber,Hayabusa,Ling
 Yin:Diggie,Valir,Pharsa,Yve
 Yu Zhong:Valir,Pharsa,Yve,Lunox
 Yve:Pharsa,Kagura,Natalia,Ling
-Zilong:Khufra,Franco,Saber,Kaja
+Zetian:Fanny,Saber,Nolan,Guinevere,Ling
 Zhask:Luo Yi,Kagura,Pharsa,Yve
 Zhuxin:Zhask,Valir,Pharsa,Yve
-Alpha:Valir,Pharsa,Yve,Lunox
-Aulus:Valir,Pharsa,Yve,Diggie
-Brodette:Diggie,Chou,Kagura
-Cici:Khufra,Minsitthar,Phoveus
-Fredrinn:Karrie,Lunox,Valir,Diggie
-Ixia:Natalia,Saber,Hayabusa,Ling
-Joy:Khufra,Minsitthar,Phoveus
-Novaria:Ling,Hayabusa,Natalia
-Nolan:Khufra,Franco,Kaja,Saber
-Arlotta:Valir,Ruby,Khufra
-Chip:Diggie,Valir,Pharsa
-Ixia:Natalia,Saber,Ling
-Faramis:Diggie,Valir,Kagura
-Bruno:Saber,Khufra,Natalia
-Suyou:Khufra,Franco,Kaja,Diggie
+Zilong:Khufra,Franco,Saber,Kaja
+
+
