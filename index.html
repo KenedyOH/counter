@@ -17,7 +17,7 @@ h2 {
 
 input, button {
   width: 90%;
-  max-width: 400px;
+  max-width: 420px;
   padding: 14px;
   font-size: 18px;
   margin: 10px 0;
@@ -28,16 +28,18 @@ button {
   color: white;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 pre {
   text-align: left;
-  font-size: 18px;
+  font-size: 17px;
   background: #f4f4f4;
   padding: 15px;
   border-radius: 6px;
-  max-width: 400px;
+  max-width: 420px;
   margin: auto;
+  white-space: pre-wrap;
 }
 </style>
 </head>
@@ -46,11 +48,12 @@ pre {
 
 <h2>Counter Mobile Legends</h2>
 
-<input id="hero"
-       list="heroesList"
-       placeholder="Hola "
-       onkeydown="if(event.key === 'Enter') buscar()">
-
+<input
+  id="hero"
+  list="heroesList"
+  placeholder="Ej: Amon, Layla"
+  onkeydown="if(event.key === 'Enter') buscar()"
+>
 
 <datalist id="heroesList"></datalist>
 
@@ -59,8 +62,8 @@ pre {
 <pre id="resultado"></pre>
 
 <script>
-let data = {};
-let heroesArray = [];
+let data = {};        // { hero: [counters] }
+let heroesOriginal = []; // Para sugerencias
 
 fetch("heroes.txt")
   .then(res => res.text())
@@ -69,15 +72,20 @@ fetch("heroes.txt")
       if (!linea.trim()) return;
 
       let [hero, counters] = linea.split(":");
-      let nombre = hero.trim().toLowerCase();
+      if (!counters) return;
 
-      data[nombre] = counters.split(",").map(h => h.trim());
-      heroesArray.push(hero.trim());
+      let heroKey = hero.trim().toLowerCase();
+
+      data[heroKey] = counters
+        .split(",")
+        .map(h => h.trim());
+
+      heroesOriginal.push(hero.trim());
     });
 
     // Llenar sugerencias
     const list = document.getElementById("heroesList");
-    heroesArray.forEach(h => {
+    heroesOriginal.forEach(h => {
       let option = document.createElement("option");
       option.value = h;
       list.appendChild(option);
@@ -89,19 +97,37 @@ function buscar() {
   let salida = [];
 
   heroes.forEach(h => {
-    let key = h.trim().toLowerCase();
+    let nombre = h.trim();
+    let key = nombre.toLowerCase();
 
-    if (data[key]) {
-      salida.push(h.trim() + " → " + data[key].join(", "));
-    } else {
-      salida.push(h.trim() + " → no encontrado");
+    if (!data[key]) {
+      salida.push(nombre + " → no encontrado");
+      return;
     }
+
+    // 🔴 Counters (le ganan)
+    let counters = data[key];
+
+    // 🟢 A quién le gana (inverso)
+    let gana = [];
+
+    for (let hero in data) {
+      let lista = data[hero].map(c => c.toLowerCase());
+      if (lista.includes(key)) {
+        gana.push(hero);
+      }
+    }
+
+    salida.push(
+      nombre +
+      "\n🔴 Counters: " + counters.join(", ") +
+      "\n🟢 Gana a: " + (gana.length ? gana.join(", ") : "Ninguno")
+    );
   });
 
-  document.getElementById("resultado").innerText = salida.join("\n");
+  document.getElementById("resultado").innerText = salida.join("\n\n");
 }
 </script>
 
 </body>
 </html>
-
