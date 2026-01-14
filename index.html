@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter Mobile Legends</title>
+</head>
+<body>
+
+<h2>Counter Mobile Legends</h2>
+
+<input id="hero" placeholder="Ej: Layla,Zilong">
+<button onclick="buscar()">Buscar</button>
+
+<pre id="resultado"></pre>
+
+<script>
+let data = {};
+
+fetch("heroes.txt")
+  .then(res => res.text())
+  .then(texto => {
+    texto.split("\n").forEach(linea => {
+      if (!linea.trim()) return;
+      let [hero, counters] = linea.split(":");
+      data[hero.trim()] = counters.split(",").map(h => h.trim());
+    });
+  });
+
+function buscar() {
+  const heroes = document.getElementById("hero").value.split(",");
+  let salida = [];
+
+  heroes.forEach(h => {
+    h = h.trim();
+    if (data[h]) {
+      salida.push(h + " → " + data[h].join(", "));
+    } else {
+      salida.push(h + " → no encontrado");
+    }
+  });
+
+  document.getElementById("resultado").innerText = salida.join("\n");
+}
+</script>
+
+</body>
+</html>
