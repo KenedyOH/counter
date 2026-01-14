@@ -1,28 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Counter Mobile Legends</title>
+<meta charset="UTF-8">
+<title>Counter ML</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+input, button {
+  width: 90%;
+  max-width: 400px;
+  padding: 14px;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+pre {
+  text-align: left;
+  font-size: 18px;
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 6px;
+  max-width: 400px;
+  margin: auto;
+}
+</style>
 </head>
+
 <body>
 
 <h2>Counter Mobile Legends</h2>
 
-<input id="hero" placeholder="Ej: Layla,Zilong">
+<input id="hero" list="heroesList" placeholder="Ej: Layla, Zilong">
+<datalist id="heroesList"></datalist>
+
 <button onclick="buscar()">Buscar</button>
 
 <pre id="resultado"></pre>
 
 <script>
 let data = {};
+let heroesArray = [];
 
 fetch("heroes.txt")
   .then(res => res.text())
   .then(texto => {
     texto.split("\n").forEach(linea => {
       if (!linea.trim()) return;
+
       let [hero, counters] = linea.split(":");
-      data[hero.trim()] = counters.split(",").map(h => h.trim());
+      let nombre = hero.trim().toLowerCase();
+
+      data[nombre] = counters.split(",").map(h => h.trim());
+      heroesArray.push(hero.trim());
+    });
+
+    // Llenar sugerencias
+    const list = document.getElementById("heroesList");
+    heroesArray.forEach(h => {
+      let option = document.createElement("option");
+      option.value = h;
+      list.appendChild(option);
     });
   });
 
@@ -31,11 +84,12 @@ function buscar() {
   let salida = [];
 
   heroes.forEach(h => {
-    h = h.trim();
-    if (data[h]) {
-      salida.push(h + " → " + data[h].join(", "));
+    let key = h.trim().toLowerCase();
+
+    if (data[key]) {
+      salida.push(h.trim() + " → " + data[key].join(", "));
     } else {
-      salida.push(h + " → no encontrado");
+      salida.push(h.trim() + " → no encontrado");
     }
   });
 
@@ -45,3 +99,4 @@ function buscar() {
 
 </body>
 </html>
+
