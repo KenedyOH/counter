@@ -1,33 +1,33 @@
-Aamon:Khufra,Saber,Kaja,Minsitthar,Franco
-Akai:Diggie,Valentina,Kaja,Chou
-Aldous:Minsitthar,Karrie,Diggie,Valir
-Alice:Valir,Karrie,Lunox,Baxia
-Alpha:Valir,Pharsa,X.Borg,Yve
-Alucard:Khufra,Franco,Kaja,Minsitthar,Ruby
-Angela:Diggie,Atlas,Carmilla,Valentina
-Argus:Kaja,Valir,Franco,Minsitthar
-Arlott:Valir,Ruby,Khufra,Phoveus
-Atlas:Valir,Yi sun shin,Wanwan,Diggie
-Aulus:Valir,Natalia,Masha
-Aurora:Kagura,Lancelot,Diggie,Chou
-Badang:Valir,Pharsa,Yve,Diggie
-Balmond:Karrie,X.Borg,Lunox,Valir
-Bane:Esmeralda,Valentina,Diggie
-Barats:Karrie,Lunox,Valir,Diggie
-Baxia:Esmeralda,Valentina,Lunox,Diggie
-Beatrix:Natalia,Saber,Hayabusa,Ling,Franco
-Belerick:Karrie,Claude,Lunox,Valir
-Benedetta:Khufra,Minsitthar,Phoveus,Franco
-Brody:Lolita,Natalia,Saber,Hayabusa
-Bruno:Khufra,Saber,Natalia,Chou
-Carmilla:Diggie,Valir,Pharsa,Yve
-Cecilion:Xavier,Yve,Pharsa,Kagura
-Chang’e:Lolita,Natalia,Saber,Hayabusa
-Chip:Diggie,Valir,Pharsa
-Chou:Diggie,Valir,Pharsa,Yve
-Cici:Khufra,Minsitthar,Phoveus
-Claude:Phoveus,Khufra,Minsitthar,Lolita
-Clint:Natalia,Saber,Hayabusa,Ling
+Aamon:Khufra,Saber,Kaja,Minsitthar,Franco,Chou,Akai,Frelin,Hayabusa,Lancelot,X Borg,Ciclope
+Akai:Diggie,Valentina,Kaja,Chou,Martis
+Aldous:Minsitthar,Karrie,Diggie,Valir,Lancelot,Benedetta
+Alice:Valir,Karrie,Lunox,Baxia,Dyrroth
+Alpha:Valir,Pharsa,X.Borg,Yve,Thamuz
+Alucard:Khufra,Franco,Kaja,Minsitthar,Ruby,Phoveus
+Angela:Diggie,Atlas,Carmilla,Valentina,Franco
+Argus:Kaja,Valir,Franco,Minsitthar,Akai
+Arlott:Valir,Ruby,Khufra,Phoveus,Minsitthar
+Atlas:Valir,Yi sun shin,Wanwan,Diggie,Nana
+Aulus:Valir,Natalia,Masha,Belerick
+Aurora:Kagura,Lancelot,Diggie,Chou,Arlott,Martis
+Badang:Valir,Pharsa,Yve,Diggie,Terizla,Gloo 
+Balmond:Karrie,X.Borg,Lunox,Valir,Baxia
+Bane:Esmeralda,Valentina,Diggie,Chou
+Barats:Karrie,Lunox,Valir,Diggie,X Borg
+Baxia:Esmeralda,Valentina,Lunox,Diggie,Dyrroth
+Beatrix:Natalia,Saber,Hayabusa,Ling,Franco,Lolita
+Belerick:Karrie,Claude,Lunox,Valir,Gusion,Aamon
+Benedetta:Khufra,Minsitthar,Phoveus,Franco,Kaja
+Brody:Lolita,Natalia,Saber,Hayabusa,Ling
+Bruno:Khufra,Saber,Natalia,Chou,Belerick
+Carmilla:Diggie,Valir,Pharsa,Yve,Baxia
+Cecilion:Xavier,Yve,Pharsa,Kagura,Natalia,Saber
+Chang’e:Lolita,Natalia,Saber,Hayabusa,Zilong
+Chip:Diggie,Valir,Pharsa,Minsitthar
+Chou:Diggie,Valir,Pharsa,Yve,Minsitthar
+Cici:Khufra,Minsitthar,Phoveus,Akai
+Claude:Phoveus,Khufra,Minsitthar,Lolita,Saber
+Clint:Natalia,Saber,Hayabusa,Ling,Aurora
 Ciclope:Lancelot,Kagura,Diggie,Chou
 Diggie:Natalia,Selena,Franco,Saber
 Dyrroth:Valir,Pharsa,Yve,Ruby
@@ -128,5 +128,6 @@ Zetian:Fanny,Saber,Nolan,Guinevere,Ling
 Zhask:Luo Yi,Kagura,Pharsa,Yve
 Zhuxin:Zhask,Valir,Pharsa,Yve
 Zilong:Khufra,Franco,Saber,Kaja
+
 
 
