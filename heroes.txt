@@ -28,19 +28,19 @@ Chou:Diggie,Valir,Pharsa,Yve,Minsitthar
 Cici:Khufra,Minsitthar,Phoveus,Akai
 Claude:Phoveus,Khufra,Minsitthar,Lolita,Saber
 Clint:Natalia,Saber,Hayabusa,Ling,Aurora
-Ciclope:Lancelot,Kagura,Diggie,Chou
-Diggie:Natalia,Selena,Franco,Saber
-Dyrroth:Valir,Pharsa,Yve,Ruby
-Edith:Karrie,Valentina,Diggie,Lunox
-Esmeralda:Karrie,Dyrroth,Lunox,Valir
-Estes:Atlas,Carmilla,Pharsa,Yve
-Eudora:Diggie,Lancelot,Kagura,Chou
-Fanny:Khufra,Minsitthar,Franco,Chou,Phoveus
-Faramis:Diggie,Valir,Kagura
-Floryn:Atlas,Carmilla,Pharsa,Yve
-Franco:Diggie,Valir,Chou,Kagura
-Fredrinn:Karrie,Lunox,Valir,Diggie
-Freya:Valir,Karrie,Lunox,Ruby
+Ciclope:Lancelot,Kagura,Diggie,Chou,Valentina
+Diggie:Natalia,Selena,Franco,Karina,Helcurt,Saber
+Dyrroth:Valir,Pharsa,Yve,Ruby,Belerick
+Edith:Karrie,Valentina,Diggie,Lunox,Gloo
+Esmeralda:Karrie,Dyrroth,Lunox,Valir,Baxia
+Estes:Atlas,Carmilla,Pharsa,Yve,Atlas
+Eudora:Diggie,Lancelot,Kagura,Chou,Aurora
+Fanny:Khufra,Minsitthar,Franco,Chou,Phoveus,Nana
+Faramis:Diggie,Valir,Kagura,Atlas
+Floryn:Atlas,Carmilla,Pharsa,Yve,Saber
+Franco:Diggie,Valir,Chou,Kagura,Akai
+Fredrinn:Karrie,Lunox,Valir,Diggie,Dyrroth
+Freya:Valir,Karrie,Lunox,Ruby,Belerick
 Gatotkaca:Karrie,Lunox,Valir,Diggie
 Gloo:Valir,X.Borg,Pharsa,Yve
 Gord:Natalia,Lancelot,Hayabusa,Ling
@@ -128,6 +128,7 @@ Zetian:Fanny,Saber,Nolan,Guinevere,Ling
 Zhask:Luo Yi,Kagura,Pharsa,Yve
 Zhuxin:Zhask,Valir,Pharsa,Yve
 Zilong:Khufra,Franco,Saber,Kaja
+
 
 
 
