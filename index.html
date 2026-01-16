@@ -46,6 +46,7 @@ button {
 
 /* PANEL DE SUGERENCIAS */
 #sugerencias {
+  display: none; /* 👈 OCULTO POR DEFECTO */
   width: 200px;
   max-height: 260px;
   overflow-y: auto;
@@ -140,26 +141,38 @@ input.addEventListener("input", () => {
   const texto = input.value.toLowerCase();
   box.innerHTML = "";
 
-  if (!texto) return;
+  if (!texto) {
+    box.style.display = "none"; // 👈 OCULTAR
+    return;
+  }
 
-  heroesOriginal
-    .filter(h => h.toLowerCase().includes(texto))
-    .forEach(h => {
-      const div = document.createElement("div");
-      div.className = "sugerencia";
-      div.textContent = h;
+  const resultados = heroesOriginal.filter(h =>
+    h.toLowerCase().includes(texto)
+  );
 
-      div.onclick = () => {
-        input.value = h;
-        box.innerHTML = "";
-      };
+  if (!resultados.length) {
+    box.style.display = "none";
+    return;
+  }
 
-      box.appendChild(div);
-    });
+  box.style.display = "block"; // 👈 MOSTRAR
+
+  resultados.forEach(h => {
+    const div = document.createElement("div");
+    div.className = "sugerencia";
+    div.textContent = h;
+
+    div.onclick = () => {
+      input.value = h;
+      box.style.display = "none";
+    };
+
+    box.appendChild(div);
+  });
 });
 
 function buscar() {
-  box.innerHTML = "";
+  box.style.display = "none";
 
   const heroes = input.value.split(",");
   let salida = [];
@@ -195,4 +208,5 @@ function buscar() {
 
 </body>
 </html>
+
 
