@@ -15,9 +15,22 @@ h2 {
   font-size: 28px;
 }
 
-input, button {
-  width: 90%;
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ZONA BUSCADOR */
+.buscador {
+  width: 100%;
   max-width: 420px;
+}
+
+input, button {
+  width: 100%;
   padding: 14px;
   font-size: 18px;
   margin: 10px 0;
@@ -31,16 +44,20 @@ button {
   cursor: pointer;
 }
 
+/* PANEL DE SUGERENCIAS */
 #sugerencias {
-  max-width: 420px;
-  margin: auto;
+  width: 200px;
+  max-height: 260px;
+  overflow-y: auto;
   background: white;
   border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  text-align: left;
 }
 
+/* ITEM */
 .sugerencia {
-  padding: 12px;
+  padding: 10px;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
 }
@@ -59,6 +76,19 @@ pre {
   margin: 20px auto;
   white-space: pre-wrap;
 }
+
+/* RESPONSIVE PARA MÓVIL */
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sugerencias {
+    width: 100%;
+    max-width: 420px;
+  }
+}
 </style>
 </head>
 
@@ -66,15 +96,21 @@ pre {
 
 <h2>Counter Mobile Legends</h2>
 
-<input
-  id="hero"
-  placeholder="Escribe el héroe"
-  onkeydown="if(event.key === 'Enter') buscar()"
->
+<div class="contenedor">
 
-<div id="sugerencias"></div>
+  <div class="buscador">
+    <input
+      id="hero"
+      placeholder="Escribe el héroe"
+      onkeydown="if(event.key === 'Enter') buscar()"
+    >
 
-<button onclick="buscar()">Buscar</button>
+    <button onclick="buscar()">Buscar</button>
+  </div>
+
+  <div id="sugerencias"></div>
+
+</div>
 
 <pre id="resultado"></pre>
 
@@ -92,7 +128,6 @@ fetch("heroes.txt")
       if (!counters) return;
 
       let key = hero.trim().toLowerCase();
-
       data[key] = counters.split(",").map(c => c.trim());
       heroesOriginal.push(hero.trim());
     });
@@ -109,7 +144,6 @@ input.addEventListener("input", () => {
 
   heroesOriginal
     .filter(h => h.toLowerCase().includes(texto))
-    .slice(0, 6)
     .forEach(h => {
       const div = document.createElement("div");
       div.className = "sugerencia";
@@ -161,3 +195,4 @@ function buscar() {
 
 </body>
 </html>
+
