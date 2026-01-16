@@ -31,6 +31,24 @@ button {
   cursor: pointer;
 }
 
+#sugerencias {
+  max-width: 420px;
+  margin: auto;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.sugerencia {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.sugerencia:hover {
+  background: #f0f0f0;
+}
+
 pre {
   text-align: left;
   font-size: 17px;
@@ -38,7 +56,7 @@ pre {
   padding: 15px;
   border-radius: 6px;
   max-width: 420px;
-  margin: auto;
+  margin: 20px auto;
   white-space: pre-wrap;
 }
 </style>
@@ -50,20 +68,19 @@ pre {
 
 <input
   id="hero"
-  list="heroesList"
-  placeholder="Hola :)"
+  placeholder="Escribe el héroe"
   onkeydown="if(event.key === 'Enter') buscar()"
 >
 
-<datalist id="heroesList"></datalist>
+<div id="sugerencias"></div>
 
 <button onclick="buscar()">Buscar</button>
 
 <pre id="resultado"></pre>
 
 <script>
-let data = {};        // { hero: [counters] }
-let heroesOriginal = []; // Para sugerencias
+let data = {};
+let heroesOriginal = [];
 
 fetch("heroes.txt")
   .then(res => res.text())
@@ -74,26 +91,43 @@ fetch("heroes.txt")
       let [hero, counters] = linea.split(":");
       if (!counters) return;
 
-      let heroKey = hero.trim().toLowerCase();
+      let key = hero.trim().toLowerCase();
 
-      data[heroKey] = counters
-        .split(",")
-        .map(h => h.trim());
-
+      data[key] = counters.split(",").map(c => c.trim());
       heroesOriginal.push(hero.trim());
-    });
-
-    // Llenar sugerencias
-    const list = document.getElementById("heroesList");
-    heroesOriginal.forEach(h => {
-      let option = document.createElement("option");
-      option.value = h;
-      list.appendChild(option);
     });
   });
 
+const input = document.getElementById("hero");
+const box = document.getElementById("sugerencias");
+
+input.addEventListener("input", () => {
+  const texto = input.value.toLowerCase();
+  box.innerHTML = "";
+
+  if (!texto) return;
+
+  heroesOriginal
+    .filter(h => h.toLowerCase().includes(texto))
+    .slice(0, 6)
+    .forEach(h => {
+      const div = document.createElement("div");
+      div.className = "sugerencia";
+      div.textContent = h;
+
+      div.onclick = () => {
+        input.value = h;
+        box.innerHTML = "";
+      };
+
+      box.appendChild(div);
+    });
+});
+
 function buscar() {
-  const heroes = document.getElementById("hero").value.split(",");
+  box.innerHTML = "";
+
+  const heroes = input.value.split(",");
   let salida = [];
 
   heroes.forEach(h => {
@@ -105,10 +139,7 @@ function buscar() {
       return;
     }
 
-    // 🔴 Counters (le ganan)
     let counters = data[key];
-
-    // 🟢 A quién le gana (inverso)
     let gana = [];
 
     for (let hero in data) {
@@ -119,8 +150,7 @@ function buscar() {
     }
 
     salida.push(
-      
-      "\n🔴 Counters: " + counters.join(", ") +
+      "🔴 Counters: " + counters.join(", ") +
       "\n\n🟢 Gana a: " + (gana.length ? gana.join(", ") : "Ninguno")
     );
   });
