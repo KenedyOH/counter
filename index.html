@@ -63,14 +63,21 @@ button {
   background: #f0f0f0;
 }
 
-pre {
-  text-align: left;
-  font-size: 16px;
+/* 🔹 RESULTADOS HORIZONTALES */
+.resultados {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.bloque {
   background: #f4f4f4;
   padding: 15px;
   border-radius: 6px;
-  max-width: 520px;
-  margin: 20px auto;
+  width: 260px;
+  text-align: left;
   white-space: pre-wrap;
 }
 
@@ -81,6 +88,11 @@ pre {
   }
 
   #sugerencias {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .bloque {
     width: 100%;
     max-width: 420px;
   }
@@ -107,13 +119,13 @@ pre {
 
 </div>
 
-<pre id="resultado"></pre>
+<div id="resultado" class="resultados"></div>
 
 <script>
 let data = {};
 let heroesOriginal = [];
 
-/* 🔹 FUNCIÓN PARA SEPARAR NOMBRE Y TIPO */
+/* 🔹 SEPARAR NOMBRE Y TIPO */
 function parseCounter(texto) {
   const match = texto.match(/(.+?)\s*\((.+?)\)/);
   if (!match) {
@@ -125,7 +137,7 @@ function parseCounter(texto) {
   };
 }
 
-/* 🔹 CARGA DEL TXT */
+/* 🔹 CARGAR TXT */
 fetch("heroes.txt")
   .then(res => res.text())
   .then(texto => {
@@ -145,7 +157,7 @@ fetch("heroes.txt")
     });
   });
 
-/* 🔹 AUTOCOMPLETE MULTI-HÉROES */
+/* 🔹 AUTOCOMPLETE */
 const input = document.getElementById("hero");
 const box = document.getElementById("sugerencias");
 
@@ -187,10 +199,12 @@ input.addEventListener("input", () => {
   });
 });
 
-/* 🔹 BÚSQUEDA */
+/* 🔹 BUSCAR */
 function buscar() {
   box.style.display = "none";
-  let salida = [];
+
+  const contenedor = document.getElementById("resultado");
+  contenedor.innerHTML = "";
 
   const heroes = input.value.split(",");
 
@@ -201,13 +215,15 @@ function buscar() {
     const key = nombre.toLowerCase();
 
     if (!data[key]) {
-      salida.push(nombre + " → no encontrado");
+      const error = document.createElement("div");
+      error.className = "bloque";
+      error.innerText = nombre + " → no encontrado";
+      contenedor.appendChild(error);
       return;
     }
 
-    /* 🔴 AGRUPAR COUNTERS POR TIPO */
+    /* AGRUPAR COUNTERS */
     const grupos = {};
-
     data[key].forEach(c => {
       if (!grupos[c.tipo]) grupos[c.tipo] = [];
       grupos[c.tipo].push(c.nombre);
@@ -218,9 +234,8 @@ function buscar() {
       textoCounters += `\n${tipo}:\n- ${grupos[tipo].join("\n- ")}\n`;
     }
 
-    /* 🟢 GANA A (COMPARANDO SOLO NOMBRE LIMPIO) */
+    /* GANA A */
     let gana = [];
-
     for (let hero in data) {
       const lista = data[hero].map(c => c.nombre.toLowerCase());
       if (lista.includes(key)) {
@@ -228,15 +243,17 @@ function buscar() {
       }
     }
 
-    salida.push(
+    const bloque = document.createElement("div");
+    bloque.className = "bloque";
+    bloque.innerText =
       textoCounters +
-      "\n🟢 Gana a: " + (gana.length ? gana.join(", ") : "Ninguno")
-    );
-  });
+      "\n🟢 Gana a: " + (gana.length ? gana.join(", ") : "Ninguno");
 
-  document.getElementById("resultado").innerText = salida.join("\n\n");
+    contenedor.appendChild(bloque);
+  });
 }
 </script>
 
 </body>
 </html>
+
