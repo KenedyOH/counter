@@ -1,4 +1,4 @@
-Aamon:Yi Sun-shin (Camuflaje), Selena (Camuflaje), Popol y Kupa (Camuflaje), Rafaela (Camuflaje), Valir (Camuflaje), Hayabusa (Inmunidad), Lancelot (Inmunidad), Lunox (Inmunidad), Lolita (Inmunidad), Benedetta (Inmunidad), Franco (Control), Kaja (Control), Minsitthar (Control), Khufra (Control), Ruby (Control), Fredrinn (Resistencia), Edith (Resistencia), Terizla (Resistencia), Belerick (Resistencia)
+Aamon:Yi Sun-shin (Revela), Selena (Revela), Popol y Kupa (Revela), Rafaela (Revela), Valir (Revela), Hayabusa (Inmunidad), Lancelot (Inmunidad), Lunox (Inmunidad), Lolita (Inmunidad), Benedetta (Inmunidad), Franco (Control), Kaja (Control), Minsitthar (Control), Khufra (Control), Ruby (Control), Fredrinn (Resistencia), Edith (Resistencia), Terizla (Resistencia), Belerick (Resistencia)
 Akai:Diggie,Valentina,Kaja,Chou,Martis
 Aldous:Minsitthar,Karrie,Diggie,Valir,Lancelot,Benedetta
 Alice:Valir,Karrie,Lunox,Baxia,Dyrroth
@@ -128,6 +128,7 @@ Zetian:Fanny,Saber,Nolan,Guinevere,Ling
 Zhask:Luo Yi,Kagura,Pharsa,Yve
 Zhuxin:Zhask,Valir,Pharsa,Yve
 Zilong:Khufra,Franco,Saber,Kaja
+
 
 
 
