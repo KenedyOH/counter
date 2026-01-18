@@ -64,7 +64,7 @@ Joy:Khufra,Minsitthar,Phoveus,Franco
 Julian:Diggie,Valir,Pharsa,Yve
 Kadita:Diggie,Kagura,Chou,Valir
 Kagura:Zhuxin,Khufra,Franco,Saber
-Kaja:Diggie (Inmunidad), Akai (Inmunidad), Faramis (Inmunidad), Minotauro (Inmunidad), Valir (Alcance), Pharsa (Alcance), Yve (Alcance), Nana (Alcance), Chou (Escapistas), Benedetta (Escapistas), Lancelot (Escapistas), Ling (Escapistas), Fredrinn (Resistencia), Uranus (Resistencia), X.Borg (Resistencia), Edith (Resistencia)
+Kaja:Diggie (Rompe control), Akai (Rompe control), Faramis (Rompe control), Minotauro (Rompe control), Valir (Alcance), Pharsa (Alcance), Yve (Alcance), Nana (Alcance), Chou (Escapistas), Benedetta (Escapistas), Lancelot (Escapistas), Ling (Escapistas), Fredrinn (Resistencia), Uranus (Resistencia), X.Borg (Resistencia), Edith (Resistencia)
 Kalea:Minsitthar,Diggie,Cici,Phoveus
 Karina:Khufra,Kaja,Franco,Saber
 Karrie:Saber,Natalia,Hayabusa,Ling
@@ -128,6 +128,7 @@ Zetian:Fanny,Saber,Nolan,Guinevere,Ling
 Zhask:Luo Yi,Kagura,Pharsa,Yve
 Zhuxin:Zhask,Valir,Pharsa,Yve
 Zilong:Khufra,Franco,Saber,Kaja
+
 
 
 
