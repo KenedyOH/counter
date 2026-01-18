@@ -1,5 +1,5 @@
-Aamon:Yi Sun-shin (Revela), Selena (Revela), Popol y Kupa (Revela), Rafaela (Revela), Valir (Revela), Hayabusa (Inmunidad), Lancelot (Inmunidad), Lunox (Inmunidad), Lolita (Inmunidad), Benedetta (Inmunidad), Franco (Control), Kaja (Control), Minsitthar (Control), Khufra (Control), Ruby (Control), Fredrinn (Resistencia), Edith (Resistencia), Terizla (Resistencia), Belerick (Resistencia)
-Akai:Diggie (Inmunidad), Martis (Inmunidad), Karrie (Daño verdadero), Lunox (Daño verdadero), X.Borg (Daño verdadero), Alpha (Daño verdadero), Valir (Alcance), Vexana (Alcance), Nana (Alcance), Melissa (Alcance), Minsitthar (Bloqueo), Khufra (Bloqueo), Phoveus (Bloqueo), Franco (Bloqueo), Kaja (Bloqueo),
+Aamon:Yi Sun-shin (Revela), Selena (Revela), Popol y Kupa (Revela), Rafaela (Revela), Valir (Revela), Hayabusa (Indañable), Lancelot (Indañable), Lunox (Indañable), Lolita (Indañable), Benedetta (Indañable), Franco (Control), Kaja (Control), Minsitthar (Control), Khufra (Control), Ruby (Control), Fredrinn (Resistencia), Edith (Resistencia), Terizla (Resistencia), Belerick (Resistencia)
+Akai:Diggie (Anticontrol), Martis (Anticontrol), Karrie (Daño verdadero), Lunox (Daño verdadero), X.Borg (Daño verdadero), Alpha (Daño verdadero), Valir (Alcance), Vexana (Alcance), Nana (Alcance), Melissa (Alcance), Minsitthar (Bloqueo), Khufra (Bloqueo), Phoveus (Bloqueo), Franco (Bloqueo), Kaja (Bloqueo),
 Aldous:Minsitthar,Karrie,Diggie,Valir,Lancelot,Benedetta
 Alice:Valir,Karrie,Lunox,Baxia,Dyrroth
 Alpha:Valir,Pharsa,X.Borg,Yve,Thamuz
@@ -128,6 +128,7 @@ Zetian:Fanny,Saber,Nolan,Guinevere,Ling
 Zhask:Luo Yi,Kagura,Pharsa,Yve
 Zhuxin:Zhask,Valir,Pharsa,Yve
 Zilong:Khufra,Franco,Saber,Kaja
+
 
 
 
