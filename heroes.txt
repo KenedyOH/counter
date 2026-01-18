@@ -29,7 +29,7 @@ Cici:Khufra,Minsitthar,Phoveus,Akai
 Claude:Phoveus,Khufra,Minsitthar,Lolita,Saber
 Clint:Natalia,Saber,Hayabusa,Ling,Aurora
 Ciclope:Lancelot,Kagura,Diggie,Chou,Valentina
-Diggie:Natalia,Selena,Franco,Karina,Helcurt,Saber
+Diggie:Esmeralda (Anti-escudos), Dyrroth (Anti-escudos), Franco (Control), Kaja (Control), Barats (Control), Sun (Contra bombas), Popol y Kupa (Contra bombas), Gloo (Contra bombas), Valentina (Utilidad), Lancelot (Inmunidad), Benedetta (Inmunidad), Chou (Inmunidad)
 Dyrroth:Valir,Pharsa,Yve,Ruby,Belerick
 Edith:Karrie,Valentina,Diggie,Lunox,Gloo
 Esmeralda:Karrie,Dyrroth,Lunox,Valir,Baxia
@@ -128,6 +128,7 @@ Zetian:Fanny,Saber,Nolan,Guinevere,Ling
 Zhask:Luo Yi,Kagura,Pharsa,Yve
 Zhuxin:Zhask,Valir,Pharsa,Yve
 Zilong:Khufra,Franco,Saber,Kaja
+
 
 
 
