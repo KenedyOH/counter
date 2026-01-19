@@ -38,7 +38,7 @@ Eudora:Diggie,Lancelot,Kagura,Chou,Aurora
 Fanny:Khufra,Minsitthar,Franco,Chou,Phoveus,Nana
 Faramis:Diggie,Valir,Kagura,Atlas
 Floryn:Atlas,Carmilla,Pharsa,Yve,Saber
-Franco:Diggie,Valir,Chou,Kagura,Akai
+Franco:Sun (Bloqueo), Popol y Kupa (Bloqueo), Grock (Bloqueo), Zhask (Bloqueo), Akai (Rompe control), Nana (Rompe control), Valir (Alcance), Lancelot (Escapista), Benedetta (Escapista), Chou (Escapista), Joy (Anticontrol), Chou (Anticontrol), Tigreal (Iniciación reversa), Atlas (Iniciación reversa), Hylos (Iniciación reversa), Belerick (Iniciación reversa)
 Fredrinn:Karrie,Lunox,Valir,Diggie,Dyrroth
 Freya:Valir,Karrie,Lunox,Ruby,Belerick
 Gatotkaca:Karrie,Lunox,Valir,Diggie
@@ -128,6 +128,7 @@ Zetian:Fanny,Saber,Nolan,Guinevere,Ling
 Zhask:Luo Yi,Kagura,Pharsa,Yve
 Zhuxin:Zhask,Valir,Pharsa,Yve
 Zilong:Khufra,Franco,Saber,Kaja
+
 
 
 
